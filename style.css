@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135def, #f5e0ee, #d5aecb);
+ background: linear-gradient(135deg, #f5e0ee, #d5aecb);
   font-family: "Poppins", serif;
   color: #4a4a4a;
   text-align: center;
