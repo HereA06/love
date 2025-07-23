@@ -27,13 +27,19 @@ yesBtn.addEventListener("click", () => {
   changeImage("รัก");
 });
 
-noBtn.addEventListener("click", () => {
+รักBtn.addEventListener("click", () => {
+  title.innerHTML = "เย้ๆๆ รักคนดีนะค่าบ 🧡";
+  btnContainer.classList.add("hidden");
+  changeImage("รัก");
+});
+
+ไม่รักBtn.addEventListener("click", () => {
   if (play) {
     noCount++;
     const imageIndex = Math.min(noCount, MAX_IMAGES);
     changeImage(imageIndex);
     resizeYesButton();
-    shrinkNoButton();
+    shrinkไม่รักButton(); // <- ชื่อฟังก์ชันต้องตรง
     updateNoButtonText();
     if (noCount === MAX_IMAGES) play = false;
   }
